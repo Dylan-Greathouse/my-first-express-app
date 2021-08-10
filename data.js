@@ -9,8 +9,8 @@ const data = [
     
     {
         "_id": 2,
-        "name": "Demon's-Souls-II",
-        "system": "PlayStation3",
+        name: "Demon's-Souls-II",
+        system: "PlayStation3",
         "played": true,
         
     },
