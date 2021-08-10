@@ -25,10 +25,10 @@ app.get('/videogames/:id', (req, res) => {
     res.json(videogame);
 });
 
-// app.get('/videogames/system/:id', (req, res) => {
-//     console.log(req.params.id);
-//     console.log(typeof req.params.id);
-//     const videogameSystemID = req.params.id;
+// app.get('/videogames/system/:system', (req, res) => {
+//     console.log(req.params.system);
+//     console.log(typeof req.params.system);
+//     const videogameSystemID = req.params.system;
 //     const videogame = data.find((item) => item.system === videogameSystemID);
 //     console.log(videogame);
 //     res.json(videogame);

@@ -11,9 +11,16 @@ it('gets the videogames endpoint', async () => {
     expect(response.body).toEqual(data);
 });
 
-// it('gets the systems endpoint', async () => {
-//     const response = await request.get('/videogames/system');
+it('gets the videogames item 1 endpoint', async () => {
+    const response = await request.get('/videogames/1');
 
-//     expect(response.status).toBe(200);
-//     expect(response.body).toEqual(data);
-// });
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual(data[0]);
+});
+
+it('gets the videogames item 2 endpoint', async () => {
+    const response = await request.get('/videogames/2');
+
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual(data[1]);
+});
